@@ -1,0 +1,23 @@
+{
+  "name": "iandsrubrec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./CSS/input.css -o ./CSS/styles.css --watch",
+    "build": "npx tailwindcss -i ./CSS/input.css -o ./CSS/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DasTanTech/IandSRubRec.git"
+  },
+  "author": "Dev Zu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DasTanTech/IandSRubRec/issues"
+  },
+  "homepage": "https://github.com/DasTanTech/IandSRubRec#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
