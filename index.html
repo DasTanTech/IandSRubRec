@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Revolutionizing Rubber Waste</title>
     <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bg-white container-fluid mx-auto overflow-auto p-2">
+
+    <!-- Mobile Header : START -->
+
+    <div id="MobileNavSection" class="bg-whitew-full h-screen hidden flex-col justify-start px-3 py-3 space-y-10">
+        <div class="flex w-full justify-between items-center">
+            <img src="/ASSETS/HEADER-LOGO.png" alt="Mobile-Logo" class="w-32">
+            <button id="MobileNavCloseBtn" class="flex justify-center items-center p-2">
+                <i class="fa-sharp fa-solid fa-xmark text-3xl" style="color: #000000;"></i>
+            </button>
+        </div>
+        <div class="flex flex-col w-full ml-6 space-y-6 text-left justify-center items-start">
+            <h2 class="text-lg text-green-600 font-medium">Home</h2>
+            <h2 class="text-lg text-zinc-600 font-medium">Products</h2>
+            <h2 class="text-lg text-zinc-600 font-medium">Science</h2>
+            <h2 class="text-lg text-zinc-600 font-medium">Vision</h2>
+            <h2 class="text-lg text-zinc-600 font-medium">Contact</h2>
+        </div>
+    </div>
+
+    <!-- Mobile Header : END -->
     
+    <!-- Header : Home : START -->
+
+    <nav class="items-center">
+
+
+        <!-- Header : START -->
+
+        <div class="flex w-full justify-between px-3 pt-3 pb-1">
+            
+            <!-- Issue_01 : Used as filler space. Work on this -->
+            <div class="hidden w-48 lg:block"></div>
+
+            <!-- > Logo Section -->
+            <div class="flex items-center justify-start">
+                <img src="/ASSETS/HEADER-LOGO.png" alt="Header-Logo" class="w-32 md:w-48">
+            </div>
+
+            <!-- > Mobile Navigation Section-->
+            <div class="flex flex-col md:hidden space-y-8 justify-center items-end">
+                <button id="MobileNavMenuBtn">
+                    <i class="fa-sharp fa-solid fa-bars text-3xl mr-2" style="color: #000000;"></i>
+                </button>
+                <div class="flex flex-col space-y-1 items-end">
+                    <div class="flex space-x-2 justify-center items-center text-xs text-black">
+                        <h1>+91 987-654-3210</h1>
+                        <i class="fa-solid fa-phone" style="color: #007d38;"></i>
+                    </div>
+
+                    <div class="flex space-x-2 justify-center items-center text-xs text-black">
+                        <h1>sales@insrecycling.com</h1>
+                        <i class="fa-solid fa-envelope" style="color: #007d38;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- > Tablet & Web Navigation Section -->
+            <div class="hidden w-full md:flex items-center justify-end space-x-4 ">
+                <h2 class="text-lg  text-black font-medium cursor-pointer">Home</h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer">Products</h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer">Science</h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer">Vision</h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer">About</h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer">Contact<h2>            
+            </div>
+
+            <!-- Issue_01 : Used as filler space. Work on this -->
+            <div class="hidden w-48 lg:block"></div>
+
+        </div>
+
+        <!-- Header : END -->
+
+    </nav>
+
+    <!-- Header : Home : END -->
+
+
+    
+    
+
+    <!-- Scripts -->
+    <script src="/JS/index.js"></script>
 </body>
 </html>
