@@ -829,14 +829,6 @@ video {
   height: 100vh;
 }
 
-.h-60 {
-  height: 15rem;
-}
-
-.h-\[\'1920px\'\] {
-  height: '1920px';
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1947,10 +1939,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-fixed {
