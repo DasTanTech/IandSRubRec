@@ -13,6 +13,17 @@
 </head>
 <body class="bg-white container-fluid mx-auto overflow-auto">
 
+    <!-- Additonal Source : START -->
+
+    <button id="scrollToTopButton" onclick="scrollToTop()" class="fixed flex bottom-4 right-4 p-2 bg-colorAccent rounded-full shadow hover:bg-colorContrast">
+        <div class="flex justify-center items-center space-x-5">
+            <h2 class="text-sm font-medium text-white">Scroll To Top</h2>
+            <i class="fa-sharp fa-solid fa-up" style="color: #ffffff;"></i>
+        </div>
+    </button>
+    
+    <!-- Additonal Source : END -->
+
     <!-- Mobile Header : START -->
 
     <div id="MobileNavSection" class="bg-white w-full h-screen hidden flex-col justify-start px-3 py-3 space-y-10">
@@ -107,7 +118,7 @@
 
         <!-- Section 1 : Hero : START -->
 
-        <div class="lg:pl-32 my-24 flex flex-col md:flex-row-reverse w-full">
+        <div class="lg:pl-32 my-24 flex flex-col md:flex-row-reverse w-full space-y-6">
             <div class="flex md:w-1/2 ">
                 <div class="flex flex-row w-full fade justify-center items-center">
                     <div class="flex flex-row w-full bg-gray-300 justify-between items-end HCICont">
@@ -123,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:pr-10 flex flex-col md:w-1/2 space-y-4 items-center lg:space-y-6 lg:items-start lg:my-auto ">
+            <div class="px-10 lg:pr-10 flex flex-col md:w-1/2 space-y-4 items-center lg:space-y-6 lg:items-start lg:my-auto ">
                 <h1 class="text-3xl font-medium text-center text-black lg:text-left lg:font-medium lg:text-5xl lg:leading-tight font-title">Transforming Rubber Waste into Sustainable Solutions</h1>
                 <h2 class="hidden lg:block text-left font-medium text-2xl italic text-colorPrimary">Revolutionizing Rubber Waste Management</h2>
                 <p class="text-sm font-normal text-center text-neutral-600 lg:text-base lg:text-left font-content">At I & S, we specialize in tire recycling, rubber material repurposing, and sustainable product development. Our innovative and eco-friendly solutions reduce waste in landfills, conserve natural resources, and decrease carbon emissions. As a leading provider of sustainable rubber recycling services, we are dedicated to creating valuable solutions for a more sustainable future. Contact us today to learn how we can transform your rubber waste into eco-friendly solutions.</p>
@@ -139,10 +150,10 @@
 
         <!-- Section 2 : About : START -->
 
-        <div class="lg:px-32 py-24 space-x-4 flex flex-col lg:flex-row justify-center items-center w-full bg-[url('/ASSETS/HOME-S2-BG-M.png')] sm:bg-[url('/ASSETS/HOME-S2-BG-W.png')] sm:bg-fixed bg-cover bg-no-repeat">
-            <div class="flex flex-col justify-center items-start space-y-6 w-full lg:w-3/4">
-                <h1 class="text-left text-5xl text-white font-title leading-tight font-medium">Empowering Change through Responsible Tire Shredding Practices</h1>
-                <p class="text-sm font-normal text-left text-gray-300 lg:text-base font-content">We are a leading rubber recycling company dedicated to environmental sustainability and the responsible management of rubber waste. With a strong commitment to innovation and a focus on quality, we have established ourselves as a trusted name in the recycling industry. <br> <br> Our mission is to contribute to a greener future by transforming waste rubber into valuable resources. Through our advanced recycling techniques and cutting-edge technology, we efficiently process rubber materials, reducing environmental impact and promoting a circular economy.</p>
+        <div class="px-10 lg:px-32 py-24 space-x-0 lg:space-x-6 space-y-6 lg:space-y-0 flex flex-col lg:flex-row justify-center items-center w-full bg-[url('/ASSETS/HOME-S2-BG-M.png')] sm:bg-[url('/ASSETS/HOME-S2-BG-W.png')] sm:bg-fixed bg-cover bg-no-repeat">
+            <div class="flex flex-col justify-center items-center lg:items-start space-y-6 w-full lg:w-3/4">
+                <h1 class="text-3xl text-center lg:text-left lg:text-5xl text-white font-title leading-tight font-medium">Empowering Change through Responsible Tire Shredding Practices</h1>
+                <p class="text-sm font-normal text-center lg:text-left text-gray-300 lg:text-base font-content">We are a leading rubber recycling company dedicated to environmental sustainability and the responsible management of rubber waste. With a strong commitment to innovation and a focus on quality, we have established ourselves as a trusted name in the recycling industry. <br> <br> Our mission is to contribute to a greener future by transforming waste rubber into valuable resources. Through our advanced recycling techniques and cutting-edge technology, we efficiently process rubber materials, reducing environmental impact and promoting a circular economy.</p>
                 <button class="bg-slate-200 hover:bg-colorDark hover:text-white py-2 px-6 text-black font-medium" onclick="location.href='/About.html'" type="button">Know More</button>
             </div>
             <div class="flex flex-col w-full lg:w-1/4 justify-center items-center space-y-16">
@@ -162,15 +173,15 @@
 
         <!-- Section 3 : Products : START -->
 
-        <div class="lg:px-32 py-24 flex flex-col w-full justify-center items-start space-y-6">
-            <h2 class="font-medium text-2xl italic text-colorPrimary">Contributing to Waste Reduction</h2>
-            <h1 class="font-medium text-black lg:font-medium lg:text-5xl leading-tight font-title"> Investing in Tyre Shreds with Embedded Steel for Sustainable Solutions</h1>
-            <div class="pt-6 flex flex-col lg:flex-row w-full justify-center items-center space-x-12">
+        <div class="px-10 lg:px-32 py-24 flex flex-col w-full justify-center items-start space-y-6">
+            <h2 class="text-lg font-medium lg:text-2xl italic text-colorPrimary">Contributing to Waste Reduction</h2>
+            <h1 class="text-3xl font-medium text-center text-black lg:text-left lg:font-medium lg:text-5xl lg:leading-tight font-title"> Investing in Tyre Shreds with Embedded Steel for Sustainable Solutions</h1>
+            <div class="pt-6 flex flex-col lg:flex-row w-full justify-center items-center space-x-0 lg:space-x-12 space-y-6 lg:space-y-0">
                 <div class="flex lg:w-1/2">
                     <img src="/ASSETS/HOME-S3-W.png" alt="" class="object-contain rounded object-center w-full">
                 </div>
-                <div class="flex flex-col w-1/2 justify-center items-start space-y-6 px-4">
-                    <p class="lg:text-base text-start font-normal text-neutral-600 font-content">
+                <div class="flex flex-col w-full lg:w-1/2 justify-center items-start space-y-6 lg:px-4">
+                    <p class="text-center lg:text-base lg:text-start font-normal text-neutral-600 font-content">
                         I & S Rubber Recycling Firm is committed to reducing waste in landfills and promoting sustainability by repurposing rubber waste. We currently buy two types of products for recycling.
                     </p>
                     
@@ -179,20 +190,20 @@
                             <img src="/ASSETS/HOME-S3-ICON.png" alt="" class="w-20">
                             <div class="flex flex-col items-start text-start space-y-1">
                                 <h2 class="text-xs font-medium text-neutral-600">Tyre Shread with Embedded Steel</h2>
-                                <h1 class="text-xl font-content font-bold text-black">50 x 100mm & 100 x 100mm</h1>
+                                <h1 class="text-base lg:text-xl font-content font-bold text-black">50 x 100mm & 100 x 100mm</h1>
                             </div>
                         </div>
                         
                     </div>
                     
-                    <p class="lg:text-base font-normal text-neutral-600 font-content">
+                    <p class="text-center lg:text-base lg:text-start font-normal text-neutral-600 font-content">
                         These shreds are created by shredding discarded tires and removing any impurities, resulting in a high-quality product that can be repurposed for a variety of applications.
                     </p>
-                    <p class="lg:text-base font-normal text-neutral-600 font-content">
+                    <p class="text-center lg:text-base lg:text-start font-normal text-neutral-600 font-content">
                         The Tyre Shreds with Embedded Steel of 50x100mm are ideal for use in construction and landscaping, as they can provide drainage and stability to surfaces. The larger Tyre Shreds with Embedded Steel of 100x100mm are commonly used in civil engineering and as a substitute for gravel in road construction.
                     </p>
                     
-                    <div class="flex space-x-2">
+                    <div class="flex w-full space-x-2 justify-center lg:justify-start">
                         <button class="bg-colorDeAccent hover:bg-colorAccent py-2 text-white font-medium hover:shadow px-6" onclick="location.href='/Contact.html'" type="button">Contact Us</button>
                         <button class="bg-transparent border border-gray-800 hover:bg-colorAccent py-2 text-gray-800 font-medium hover:shadow px-6 hover:border-colorDark hover:text-white" onclick="location.href='/Services.html'" type="button">Know More</button>
                     </div>
@@ -204,12 +215,12 @@
 
         <!-- Section 4 : Science : START -->
 
-        <div class="lg:px-32 py-24 flex flex-col justify-center items-start bg-center bg-cover bg-fixed bg-no-repeat bg-[url('/ASSETS/HOME-S4.jpg')] space-y-6">
-            <h2 class="font-medium text-2xl italic text-colorPrimary">Breaking Boundaries with Pyrolysis</h2>
-            <h1 class="font-medium text-black lg:font-medium lg:text-5xl leading-tight font-title pr-20">Sustainable Conversion of Tyre Shreds to Rubber Crumb and Pristine Steel</h1>
-            <div class="pt-6 flex flex-col lg:flex-row w-full justify-center items-center space-x-12">
-                <div class="flex flex-col w-1/2 justify-center items-start space-y-6">
-                    <p class="lg:text-base text-start font-normal text-neutral-600 font-content">
+        <div class="px-10 lg:px-32 py-24 flex flex-col justify-center items-center lg:items-start bg-center bg-cover bg-fixed bg-no-repeat bg-[url('/ASSETS/HOME-S4-M.png')] md:bg-[url('/ASSETS/HOME-S4.jpg')] space-y-6">
+            <h2 class="text-lg font-medium lg:text-2xl italic text-colorPrimary">Breaking Boundaries with Pyrolysis</h2>
+            <h1 class="text-3xl font-medium text-center text-black lg:text-left lg:font-medium lg:text-5xl lg:leading-tight font-title">Sustainable Conversion of Tyre Shreds to Rubber Crumb and Pristine Steel</h1>
+            <div class="pt-6 flex flex-col lg:flex-row w-full justify-center items-center space-x-0 lg:space-x-12 space-y-6 lg:space-y-0">
+                <div class="flex flex-col w-full lg:w-1/2 justify-center items-center lg:items-start space-y-6">
+                    <p class="lg:text-base text-center lg:text-start font-normal text-neutral-600 font-content">
                         At I & S Rubber Recycling,we are dedicated to creating sustainable solutions for rubber waste. We have developed a revolutionary pyrolysis process that allows us to transform rubber waste into high-quality products without harming the environment. Pyrolysis is a thermal process that breaks down rubber waste into smaller molecules, which can then be used to create a range of valuable products.
         
                         <br><br> Our team of experts has perfected the pyrolysis process to ensure maximum efficiency and minimal waste. We are committed to utilizing the latest technologies to reduce our environmental impact and create a more sustainable future. By choosing I & S Rubber Recycling, you can trust that your rubber waste is being recycled responsibly and with the utmost care.
@@ -217,12 +228,12 @@
                         <br><br> Visit our Science page to learn more about the pyrolysis process and how we are leading the way in sustainable rubber recycling. We believe that our commitment to innovation and sustainability is what sets us apart, and we are proud to be pioneers in the industry.
                     </p>
                     
-                    <div class="flex space-x-2">
+                    <div class="flex w-full space-x-2 justify-center lg:justify-start">
                         <button class="bg-colorDeAccent hover:bg-colorAccent py-2 text-white font-medium hover:shadow px-6" onclick="location.href='/Science.html'" type="button">Know More</button>
                         <button class="bg-transparent border border-gray-800 hover:bg-colorAccent py-2 text-gray-800 font-medium hover:shadow px-6 hover:border-colorDark hover:text-white" onclick="location.href='/About.html'" type="button">Visit Our Plant</button>
                     </div>
                 </div>
-                <div class="flex lg:w-1/2">
+                <div class="flex w-full lg:w-1/2">
                     <img src="/ASSETS/HOME-S4-1.png" alt="" class="object-contain rounded object-center w-full">
                 </div>
             </div>
@@ -234,13 +245,13 @@
 
         <!-- Section 5 : Vision : START -->
 
-        <div class="lg:px-32 py-24 flex flex-col justify-center items-center bg-center bg-cover bg-fixed bg-no-repeat bg-[url('/ASSETS/HOME-S4.jpg')] space-y-6">
-            <h2 class="font-bold text-3xl italic text-colorPrimary"><span class="text-colorLight">Revolutionize,</span> <span class="text-colorBase"> Recycle,</span><span class="text-colorDark"> Reimagine</span></h2>
-            <h1 class="font-medium text-black lg:font-medium lg:text-5xl leading-tight font-title">Our Vision for a Greener World</h1>
-            <div class="flex flex-col lg:flex-row w-full lg:justify-evenly lg:items-center space-x-8 pt-10">
-                <div class="flex flex-col justify-center items-center rounded p-6 space-y-6">
+        <div class="px-10 lg:px-32 py-24 flex flex-col justify-center items-center bg-center bg-cover bg-fixed bg-no-repeat bg-[url('/ASSETS/HOME-S4.jpg')] space-y-6">
+            <h2 class="text-lg font-medium lg:text-2xl italic text-colorPrimary"><span class="text-colorLight">Revolutionize,</span> <span class="text-colorBase"> Recycle,</span><span class="text-colorDark"> Reimagine</span></h2>
+            <h1 class="text-3xl font-medium text-center text-black lg:text-left lg:font-medium lg:text-5xl lg:leading-tight font-title">Our Vision for a Greener World</h1>
+            <div class="flex flex-col lg:flex-row w-full justify-center lg:justify-evenly lg:items-center space-x-0 lg:space-x-8 space-y-6 lg:space-y-0 pt-10">
+                <div class="flex flex-col justify-center items-center p-6 space-y-6">
                     <img src="/ASSETS/HOME-V-1.png" alt="" class="w-20">
-                    <h1 class="font-medium text-black lg:font-medium text-center lg:text-xl leading-tight font-title">Promoting a circular economy by recycling rubber waste and reducing environmental impact</h1>
+                    <h1 class="font-medium text-black lg:font-medium text-center text-base lg:text-xl leading-tight font-title">Promoting a circular economy by recycling rubber waste and reducing environmental impact</h1>
                 </div>
                 <div class="flex flex-col justify-center items-center rounded p-6 space-y-6">
                     <img src="/ASSETS/HOME-V-2.png" alt="" class="w-20">
@@ -257,24 +268,24 @@
 
         <!-- Section 6 : Contact : START -->
 
-        <div class="lg:px-32 py-24 space-x-4 flex flex-col lg:flex-row justify-center items-center w-full bg-[url('/ASSETS/HOME-S6-W.jpg')] sm:bg-fixed bg-cover bg-no-repeat">
-            <div class="flex flex-col justify-center items-start space-y-6 w-full lg:w-3/4">
-                <h1 class="text-left text-5xl text-white font-title leading-tight font-medium">The Rubber Connection <br>Get in Touch for Tire Recycling</h1>
-                <p class="text-sm font-normal text-left text-gray-300 lg:text-base font-content">We are committed to promoting sustainability and helping our environment. Join us in this mission by contributing to our cause and partnering with us in our tire recycling efforts. Together, we can make a difference and pave the way for a brighter future.
+        <div class="px-10 lg:px-32 py-24 space-x-0 lg:space-x-4 space-y-6 lg:space-y-0 flex flex-col lg:flex-row justify-center items-center w-full bg-[url('/ASSETS/HOME-S6-W.jpg')] bg-center bg-fixed bg-cover bg-no-repeat">
+            <div class="flex flex-col justify-center items-center lg:items-start space-y-6 w-full lg:w-3/4">
+                <h1 class="text-3xl text-center lg:text-left lg:text-5xl text-white font-title leading-tight font-medium">The Rubber Connection <br>Get in Touch for Tire Recycling</h1>
+                <p class="text-sm font-normal text-center lg:text-left text-gray-300 lg:text-base font-content">We are committed to promoting sustainability and helping our environment. Join us in this mission by contributing to our cause and partnering with us in our tire recycling efforts. Together, we can make a difference and pave the way for a brighter future.
                 <br><br>
                 Contact us now to learn more about our tire recycling services and how you can get involved. Our team is dedicated to providing you with the best service and experience possible. Let's work together towards a cleaner and greener world.</p>
                 <button class="bg-slate-200 hover:bg-colorDark hover:text-white py-2 px-6 text-black font-medium" onclick="location.href='/Contact.html'" type="button">Contact Now</button>
             </div>
-            <div class="flex flex-col w-full lg:w-1/2 justify-center items-center p-10 bg-white h-full rounded space-y-6">
+            <div class="flex flex-col w-full lg:w-1/2 justify-center items-center p-10 lg:p-10 bg-white h-full rounded space-y-6">
                 <h1 class="text-xl font-medium text-center text-black lg:font-bold lg:text-3xl">Stay Connected, Stay Green!</h1>
                 <p class="text-sm font-normal text-center text-neutral-600 lg:text-base">
                     Stay updated with the latest news, updates, and offers from our rubber recycling company by subscribing to our newsletter.
                 </p>
-                <div class="flex space-x-4 w-full justify-center">
-                    <input class="shadow appearance-none border rounded w-4/5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="UserEmailSubscribe" type="email" placeholder="Email">
+                <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 space-x-0 lg:space-x-4 w-full justify-center">
+                    <input class="shadow appearance-none border rounded  w-full lg:w-4/5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="UserEmailSubscribe" type="email" placeholder="Email">
                     <button class="bg-colorDeAccent hover:bg-colorAccent py-2 text-white font-medium hover:shadow px-6" onclick="location.href='/Services.html'" type="button">subscribe</button>
                 </div>
-                <p class="text-sm font-normal text-center text-neutral-600 lg:text-sm">
+                <p class="text-sm font-normal text-center lg:text-left text-gray-300 lg:text-base font-content">
                     By subscribing to our newsletter, you will receive valuable insights, industry updates, recycling tips, and exclusive offers straight to your inbox. Don't miss out on the opportunity to be part of our recycling community.
                 </p>
             </div>
