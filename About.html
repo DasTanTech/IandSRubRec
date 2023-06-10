@@ -1,27 +1,41 @@
-<!DOCTYPE html>
+<!DOCTYPE html class="scroll-smooth">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="/ASSETS/FAV-ICON.png">
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Vollkorn:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white container-fluid mx-auto overflow-auto">
 
+    <!-- Additonal Source : START -->
+
+    <button id="scrollToTopButton" onclick="scrollToTop()" class="fixed hidden bottom-4 right-4 py-2 px-3 bg-colorAccent rounded-full shadow hover:bg-white text-white hover:text-colorAccent border border-colorAccent">
+        <div class="flex justify-center items-center space-x-5">
+            <i class="fa-sharp fa-solid fa-caret-up text-lg hover:fill-colorAccent fill-white" ></i>
+        </div>
+    </button>
+    
+    <!-- Additonal Source : END -->
+
     <!-- Mobile Header : START -->
 
-    <div id="MobileNavSection" class="bg-whitew-full h-screen hidden flex-col justify-start px-3 py-3 space-y-10">
+    <div id="MobileNavSection" class="bg-white w-full h-screen hidden flex-col justify-start px-3 py-3 space-y-10">
         <div class="flex w-full justify-between items-center">
             <img src="/ASSETS/HEADER-LOGO.png" alt="Mobile-Logo" class="w-32">
             <button id="MobileNavCloseBtn" class="flex justify-center items-center p-2">
                 <i class="fa-sharp fa-solid fa-xmark text-3xl" style="color: #000000;"></i>
             </button>
         </div>
-        <div class="flex flex-col w-full ml-6 space-y-6 text-left justify-center items-start">
+        <div class="flex flex-col w-full ml-6 space-y-6 text-left justify-center items-start font-title">
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/index.html">Home</a></h2>
-            <h2 class="text-lg text-zinc-600 font-medium"><a href="/Services.html">Products</a></h2>
+            <h2 class="text-lg text-zinc-600 font-medium"><a href="/Services.html">Solutions</a></h2>
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/Company/Science.html">Science</a></h2>
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/Company/Vision.html">Vision</a></h2>
             <h2 class="text-lg text-green-600 font-medium">About</h2>
@@ -45,7 +59,7 @@
 
             <!-- > Logo Section -->
             <div class="flex items-center justify-start">
-                <img src="/ASSETS/HEADER-LOGO.png" alt="Header-Logo" class="w-32 md:w-48 transform duration-300" id="HeaderLogo">
+                <img src="/ASSETS/HEADER-LOGO.png" id="HeaderLogo" alt="Header-Logo" class="w-32 md:w-48 transform duration-100" >
             </div>
 
             <!-- > Mobile Navigation Section-->
@@ -56,23 +70,23 @@
                 <div class="flex flex-col space-y-1 items-end">
                     <div class="flex space-x-2 justify-center items-center text-xs text-black">
                         <h1>+91 987-654-3210</h1>
-                        <i class="fa-solid fa-phone" style="color: #007d38;"></i>
+                        <i class="fa-solid fa-phone fill-colorAccent"></i>
                     </div>
 
                     <div class="flex space-x-2 justify-center items-center text-xs text-black">
                         <h1>sales@insrecycling.com</h1>
-                        <i class="fa-solid fa-envelope" style="color: #007d38;"></i>
+                        <i class="fa-solid fa-envelope fill-colorAccent"></i>
                     </div>
                 </div>
             </div>
 
             <!-- > Tablet & Web Navigation Section -->
-            <div class="hidden w-full md:flex items-center justify-end space-x-4">
-                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer"><a href="/index.html">Home</a></h2>
-                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer"><a href="/Services.html">products</a></h2>
+            <div class="hidden w-full md:flex items-center justify-end space-x-4 font-title">
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/index.html">Home</a></h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer"><a href="/Services.html">Solutions</a></h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Company/Science.html">Science</a></h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Company/Vision.html">Vision</a></h2>
-                <h2 class="text-lg  text-black font-medium cursor-pointer">About</h2>
+                <h2 class="text-lg  text-black font-medium cursor-pointer">About</h2>  
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Contact.html">Contact</a><h2>            
             </div>
 
@@ -80,12 +94,12 @@
             <div class="hidden w-48 lg:block my-auto" id="HeaderInfoSec">
                 <div class="hidden flex-col w-full items-end justify-center space-y-2 px-20" id="HeaderInfo">
                     <div class="flex space-x-4 justify-end items-center">
-                        <p class="text-base text-black font-medium">+91 790-004-0696</p>
-                        <i class="fa-solid fa-phone text-sm p-2 bg-colorDark rounded-full" style="color: #ffffff;"></i>
+                        <p class="text-base text-black font-medium font-content">+91 790-004-0696</p>
+                        <i class="fa-solid fa-phone text-lg fill-colorAccent"></i>
                     </div>
                     <div class="flex space-x-4 justify-end items-center">
-                        <p class="text-base text-black font-medium">sales@insrecycling.com</p>
-                        <i class="fa-solid fa-envelope text-sm p-2 rounded-full bg-colorDark" style="color: #ffffff;"></i>
+                        <p class="text-base text-black font-medium font-content">sales@insrecycling.com</p>
+                        <i class="fa-solid fa-envelope text-lg fill-colorAccent"></i>
                     </div>
                 </div>
             </div>

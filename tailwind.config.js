@@ -11,7 +11,8 @@ module.exports = {
         colorContent: 'text-neutral-600',
         colorPrimary: '#1fb622',
         colorAccent: '#042a59',
-        colorDeAccent: '#4f6a8b'
+        colorDeAccent: '#4f6a8b',
+        colorSec: '#fdf9fa',
       },
       fontFamily: {
         title: ['Vollkorn', 'mono'],
