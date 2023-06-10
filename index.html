@@ -15,10 +15,9 @@
 
     <!-- Additonal Source : START -->
 
-    <button id="scrollToTopButton" onclick="scrollToTop()" class="fixed flex bottom-4 right-4 p-2 bg-colorAccent rounded-full shadow hover:bg-colorContrast">
+    <button id="scrollToTopButton" onclick="scrollToTop()" class="fixed flex bottom-4 right-4 py-2 px-3 bg-colorAccent rounded-full shadow hover:bg-white text-white hover:text-colorAccent border border-colorAccent">
         <div class="flex justify-center items-center space-x-5">
-            <h2 class="text-sm font-medium text-white">Scroll To Top</h2>
-            <i class="fa-sharp fa-solid fa-up" style="color: #ffffff;"></i>
+            <i class="fa-sharp fa-solid fa-caret-up text-lg hover:fill-colorAccent fill-white" ></i>
         </div>
     </button>
     
@@ -81,7 +80,7 @@
             </div>
 
             <!-- > Tablet & Web Navigation Section -->
-            <div class="hidden w-full md:flex items-center justify-end space-x-4 font-content">
+            <div class="hidden w-full md:flex items-center justify-end space-x-4 font-title">
                 <h2 class="text-lg  text-black font-medium cursor-pointer">Home</h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer"><a href="/Services.html">Products</a></h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Company/Science.html">Science</a></h2>
@@ -285,7 +284,7 @@
                     <input class="shadow appearance-none border rounded  w-full lg:w-4/5 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="UserEmailSubscribe" type="email" placeholder="Email">
                     <button class="bg-colorDeAccent hover:bg-colorAccent py-2 text-white font-medium hover:shadow px-6" onclick="location.href='/Services.html'" type="button">subscribe</button>
                 </div>
-                <p class="text-sm font-normal text-center lg:text-left text-gray-300 lg:text-base font-content">
+                <p class="text-xs font-normal text-center text-neutral-600 lg:text-sm">
                     By subscribing to our newsletter, you will receive valuable insights, industry updates, recycling tips, and exclusive offers straight to your inbox. Don't miss out on the opportunity to be part of our recycling community.
                 </p>
             </div>

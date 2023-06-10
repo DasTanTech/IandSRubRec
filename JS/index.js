@@ -4,6 +4,7 @@ const mobNavSection = document.getElementById('MobileNavSection');
 
 mobNavBtn.addEventListener('click',(e) => {
     e.preventDefault;
+    scrollToTop();
     mobNavSection.classList.replace('hidden','flex');
     document.body.classList.replace('overflow-auto','overflow-hidden');
 })
@@ -24,22 +25,21 @@ window.addEventListener("scroll", function() {
     var headerInfoSec = this.document.getElementById("HeaderInfoSec");
   
     if (window.pageYOffset > 0) {
-        navbar.classList.add("md:shadow-lg");
-        navbar.classList.add("md:fixed");
-        navbar.classList.add("md:top-0");
-        headerLogo.classList.replace("md:w-48","md:w-32");
+      headerLogo.src = '/ASSETS/LOGO-HORI.png';
+        navbar.classList.add("shadow-lg");
+        navbar.classList.add("fixed");
+        navbar.classList.add("top-0");
+        headerLogo.classList.replace("md:w-48","md:w-96");
         headerInfo.classList.replace("hidden","flex");
         headerInfoSec.classList.replace("w-48","w-96");
-        
-
       } else {
-        navbar.classList.remove("md:shadow-lg");
-        navbar.classList.remove("md:fixed");
-        navbar.classList.remove("md:top-0");
-        headerLogo.classList.replace("md:w-32","md:w-48");
+        headerLogo.src = '/ASSETS/HEADER-LOGO.png';
+        navbar.classList.remove("shadow-lg");
+        navbar.classList.remove("fixed");
+        navbar.classList.remove("top-0");
+        headerLogo.classList.replace("md:w-96","md:w-48");
         headerInfo.classList.replace("flex","hidden");
         headerInfoSec.classList.replace("w-96","w-48");
-        
       }
 });
 
