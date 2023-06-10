@@ -3,11 +3,20 @@ const mobNavCloseBtn = document.getElementById('MobileNavCloseBtn');
 const mobNavSection = document.getElementById('MobileNavSection');
 
 mobNavBtn.addEventListener('click',(e) => {
-    e.preventDefault;
+  e.preventDefault;
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollToTop();
-    mobNavSection.classList.replace('hidden','flex');
-    document.body.classList.replace('overflow-auto','overflow-hidden');
+    setTimeout(enableMobNav, 1000);
+  } else {
+    enableMobNav();
+  }
 })
+
+function enableMobNav() {
+mobNavSection.classList.replace('hidden','flex');
+document.body.classList.replace('overflow-auto','overflow-hidden');
+}
 
 mobNavCloseBtn.addEventListener('click', (e) => {
     e.preventDefault;
@@ -25,7 +34,11 @@ window.addEventListener("scroll", function() {
     var headerInfoSec = this.document.getElementById("HeaderInfoSec");
   
     if (window.pageYOffset > 0) {
-      headerLogo.src = '/ASSETS/LOGO-HORI.png';
+        if(window.screen.width > 425)
+        {
+          headerLogo.src = '/ASSETS/LOGO-HORI.png';
+        }
+        console.log(window.screen.width);
         navbar.classList.add("shadow-lg");
         navbar.classList.add("fixed");
         navbar.classList.add("top-0");
@@ -33,7 +46,10 @@ window.addEventListener("scroll", function() {
         headerInfo.classList.replace("hidden","flex");
         headerInfoSec.classList.replace("w-48","w-96");
       } else {
-        headerLogo.src = '/ASSETS/HEADER-LOGO.png';
+        if(window.screen.width > 425)
+        {
+          headerLogo.src = '/ASSETS/HEADER-LOGO.png';
+        }
         navbar.classList.remove("shadow-lg");
         navbar.classList.remove("fixed");
         navbar.classList.remove("top-0");
@@ -52,9 +68,9 @@ window.onscroll = function() {
 function scrollFunction() {
     var scrollToTopButton = document.getElementById("scrollToTopButton");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      scrollToTopButton.style.display = "block";
+      scrollToTopButton.classList.replace('hidden','flex');
     } else {
-      scrollToTopButton.style.display = "none";
+      scrollToTopButton.classList.replace('flex','hidden');
     }
 }
   
