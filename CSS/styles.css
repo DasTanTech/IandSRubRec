@@ -711,6 +711,10 @@ video {
   margin-bottom: 7rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -737,14 +741,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .box-border {
@@ -1951,6 +1947,11 @@ video {
   border-style: none;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-colorAccent {
   --tw-border-opacity: 1;
   border-color: rgb(4 42 89 / var(--tw-border-opacity));
@@ -2028,8 +2029,8 @@ video {
   background-image: url('/ASSETS/ABOUT-S2.png');
 }
 
-.bg-\[url\(\'\/ASSETS\/CONTACT-S2\.jpg\'\)\] {
-  background-image: url('/ASSETS/CONTACT-S2.jpg');
+.bg-\[url\(\'\/ASSETS\/CONTACT-S2\.png\'\)\] {
+  background-image: url('/ASSETS/CONTACT-S2.png');
 }
 
 .bg-\[url\(\'\/ASSETS\/HOME-S2-BG-M\.png\'\)\] {
@@ -2058,10 +2059,6 @@ video {
 
 .bg-\[url\(\'\/ASSETS\/SERVICES-S2-BG\.jpg\'\)\] {
   background-image: url('/ASSETS/SERVICES-S2-BG.jpg');
-}
-
-.bg-\[url\(\'\/ASSETS\/CONTACT-S2\.png\'\)\] {
-  background-image: url('/ASSETS/CONTACT-S2.png');
 }
 
 .decoration-slice {
@@ -2290,6 +2287,10 @@ video {
   padding-left: 1rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -2300,10 +2301,6 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .text-left {
@@ -2489,12 +2486,12 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-tight {
-  line-height: 1.25;
-}
-
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2551,6 +2548,11 @@ video {
   color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
+.text-neutral-100 {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+
 .text-neutral-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
@@ -2569,19 +2571,6 @@ video {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-
-.text-neutral-100 {
-  --tw-text-opacity: 1;
-  color: rgb(245 245 245 / var(--tw-text-opacity));
-}
-
-.text-\[\'10px\'\] {
-  color: '10px';
-}
-
-.text-\[\'8px\'\] {
-  color: '8px';
 }
 
 .underline {
@@ -3258,10 +3247,6 @@ video {
 
   .lg\:w-40 {
     width: 10rem;
-  }
-
-  .lg\:w-1 {
-    width: 0.25rem;
   }
 
   .lg\:flex-row {
