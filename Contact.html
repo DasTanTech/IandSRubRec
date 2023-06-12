@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="/ASSETS/FAV-ICON.png">
     <link rel="stylesheet" href="/CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Vollkorn:wght@500&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white container-fluid mx-auto overflow-auto">
 
+    <!-- Additonal Source : START -->
+
+    <button id="scrollToTopButton" onclick="scrollToTop()" class="fixed hidden bottom-4 right-4 py-2 px-3 bg-colorAccent rounded-full shadow hover:bg-white text-white hover:text-colorAccent border border-colorAccent">
+        <div class="flex justify-center items-center space-x-5">
+            <i class="fa-sharp fa-solid fa-caret-up text-lg hover:fill-colorAccent fill-white" ></i>
+        </div>
+    </button>
+    
+    <!-- Additonal Source : END -->
+
     <!-- Mobile Header : START -->
 
-    <div id="MobileNavSection" class="bg-whitew-full h-screen hidden flex-col justify-start px-3 py-3 space-y-10">
+    <div id="MobileNavSection" class="bg-white w-full h-screen hidden flex-col justify-start px-3 py-3 space-y-10">
         <div class="flex w-full justify-between items-center">
             <img src="/ASSETS/HEADER-LOGO.png" alt="Mobile-Logo" class="w-32">
             <button id="MobileNavCloseBtn" class="flex justify-center items-center p-2">
                 <i class="fa-sharp fa-solid fa-xmark text-3xl" style="color: #000000;"></i>
             </button>
         </div>
-        <div class="flex flex-col w-full ml-6 space-y-6 text-left justify-center items-start">
+        <div class="flex flex-col w-full ml-6 space-y-6 text-left justify-center items-start font-title">
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/index.html">Home</a></h2>
-            <h2 class="text-lg text-zinc-600 font-medium"><a href="/Services.html">Products</a></h2>
+            <h2 class="text-lg text-zinc-600 font-medium"><a href="/Services.html">Solutions</a></h2>
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/Company/Science.html">Science</a></h2>
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/Company/Vision.html">Vision</a></h2>
             <h2 class="text-lg text-zinc-600 font-medium"><a href="/About.html">About</a></h2>
             <h2 class="text-lg text-green-600 font-medium">Contact</h2>
-            
         </div>
     </div>
 
@@ -46,7 +59,7 @@
 
             <!-- > Logo Section -->
             <div class="flex items-center justify-start">
-                <img src="/ASSETS/HEADER-LOGO.png" alt="Header-Logo" class="w-32 md:w-48 transform duration-300" id="HeaderLogo">
+                <img src="/ASSETS/HEADER-LOGO.png" id="HeaderLogo" alt="Header-Logo" class="w-32 md:w-48 transform duration-100" >
             </div>
 
             <!-- > Mobile Navigation Section-->
@@ -57,36 +70,36 @@
                 <div class="flex flex-col space-y-1 items-end">
                     <div class="flex space-x-2 justify-center items-center text-xs text-black">
                         <h1>+91 987-654-3210</h1>
-                        <i class="fa-solid fa-phone" style="color: #007d38;"></i>
+                        <i class="fa-solid fa-phone fill-colorAccent"></i>
                     </div>
 
                     <div class="flex space-x-2 justify-center items-center text-xs text-black">
                         <h1>sales@insrecycling.com</h1>
-                        <i class="fa-solid fa-envelope" style="color: #007d38;"></i>
+                        <i class="fa-solid fa-envelope fill-colorAccent"></i>
                     </div>
                 </div>
             </div>
 
             <!-- > Tablet & Web Navigation Section -->
-            <div class="hidden w-full md:flex items-center justify-end space-x-4">
+            <div class="hidden w-full md:flex items-center justify-end space-x-4 font-title">
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer"><a href="/index.html">Home</a></h2>
-                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Services.html">Products</a><h2>
+                <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600 cursor-pointer"><a href="/Services.html">Solutions</a></h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Company/Science.html">Science</a></h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/Company/Vision.html">Vision</a></h2>
                 <h2 class="text-lg text-zinc-600 font-medium hover:text-green-600  cursor-pointer"><a href="/About.html">About</a></h2>
-                <h2 class="text-lg  text-black font-medium cursor-pointer">Contact</h2>            
+                <h2 class="text-lg  text-black font-medium cursor-pointer">Contact</h2>        
             </div>
 
             <!-- Issue_01 : Used as filler space. Work on this -->
             <div class="hidden w-48 lg:block my-auto" id="HeaderInfoSec">
                 <div class="hidden flex-col w-full items-end justify-center space-y-2 px-20" id="HeaderInfo">
                     <div class="flex space-x-4 justify-end items-center">
-                        <p class="text-base text-black font-medium">+91 790-004-0696</p>
-                        <i class="fa-solid fa-phone text-sm p-2 bg-colorDark rounded-full" style="color: #ffffff;"></i>
+                        <p class="text-base text-black font-medium font-content">+91 790-004-0696</p>
+                        <i class="fa-solid fa-phone text-lg fill-colorAccent"></i>
                     </div>
                     <div class="flex space-x-4 justify-end items-center">
-                        <p class="text-base text-black font-medium">sales@insrecycling.com</p>
-                        <i class="fa-solid fa-envelope text-sm p-2 rounded-full bg-colorDark" style="color: #ffffff;"></i>
+                        <p class="text-base text-black font-medium font-content">sales@insrecycling.com</p>
+                        <i class="fa-solid fa-envelope text-lg fill-colorAccent"></i>
                     </div>
                 </div>
             </div>
@@ -98,6 +111,142 @@
     </nav>
 
     <!-- Header : Home : END -->
+
+    <main class="flex flex-col" id="BodyHome">
+
+        <!-- Section 1 : Hero : START -->
+
+        <div class="lg:pl-32 pt-10 pb-24 flex flex-col md:flex-row-reverse w-full space-y-6">
+            <div class="flex md:w-1/2 ">
+                <div class="flex w-full fade justify-center items-center">
+                    <img src="/ASSETS/CONTACT-S1.jpg" alt="">
+                </div>
+            </div>
+            <div class="px-10 lg:pl-0 lg:pr-10 flex flex-col w-full md:w-1/2 space-y-4 items-center lg:space-y-6 lg:items-start justify-center">
+                <h1 class="text-3xl font-medium text-center text-black lg:text-left lg:font-medium lg:text-5xl lg:leading-tight font-title">Join the movement for a <span class="text-colorPrimary">cleaner</span> planet. <br>Contact us to contribute to a <span class="text-colorPrimary">greener</span> tomorrow.</h1>
+            </div>
+        </div>
+
+        <!-- Section 1 : Hero : END -->
+
+        <div class="px-10 lg:px-32 py-24 space-y-6 flex flex-col justify-center items-center lg:items-start w-full bg-[url('/ASSETS/CONTACT-S2.png')] sm:bg-fixed bg-cover bg-no-repeat">
+            <h2 class="text-lg font-medium text-center lg:text-left lg:text-2xl italic text-colorPrimary">Elevate Your Recycling Efforts to New Heights</h2>
+            <h1 class="text-3xl text-center lg:text-left lg:text-5xl text-white font-title leading-tight font-medium">Contact Us</h1>
+            <div class="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 space-x-0 lg:space-x-6 w-full">
+                <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pr-10">
+                    <h2 class="text-xs font-normal text-start lg:text-base text-neutral-100 font-content mb-4">
+                        <i class="fa-solid fa-location-dot text-base fill-white"></i>
+                        <span class="pl-2">Office Address:</span>
+                    </h2>
+                    <h1 class="text-lg font-normal text-start lg:text-2xl text-white font-content leading-tight mb-10">
+                        <span class="font-semibold"> I & S Rubber Recycling, LLP</span><br>
+                        <span class="text-base lg:text-xl">
+                            Shop No - G1, Ground Floor, Mohemadi Chambers,<br>
+                            JJ road, byculla, Mumbai - 400008
+                        </span>
+                    </h1>
+
+                    <h2 class="text-xs font-normal text-start lg:text-base text-neutral-100 font-content mb-4">
+                        <i class="fa-solid fa-envelope text-base fill-white"></i>
+                        <span class="pl-2">Email Address:</span>
+                    </h2>
+                    <h1 class="text-lg font-normal text-start lg:text-2xl text-white font-content leading-normal mb-10">
+                        sales@insrecycling.com<br>
+                        info@insrecycling.com
+                    </h1>
+
+                    <h2 class="text-xs font-normal text-start lg:text-base text-neutral-100 font-content mb-4">
+                        <i class="fa-solid fa-phone text-base fill-white"></i>
+                        <span class="pl-2">Contact Info:</span>
+                    </h2>
+                    <h1 class="text-lg font-normal text-start lg:text-2xl text-white font-content leading-normal mb-10">
+                        +91 790-004-0696
+                    </h1>
+
+                    <h2 class="text-xs font-normal text-start lg:text-base text-neutral-100 font-content mb-4">
+                        <i class="fa-solid fa-phone text-base fill-white"></i>
+                        <span class="pl-2">Social Media</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Footer : START -->
+
+    <footer class="bg-white p-10 flex flex-col w-full lg:px-28">
+        <div class="flex flex-col w-full md:flex-row items-center justify-between space-y-4">
+            <div class="flex flex-col justify-center items-center space-y-1 md:items-start mb-10">
+                <img src="/ASSETS/HEADER-LOGO.png" alt="Footer-Logo" class="w-44">
+                <h1 class="text-center font-medium text-sm italic text-green-600">Revolutionizing Rubber Waste Management</h1>
+            </div>
+            <div class="flex flex-col justify-center items-start space-y-4">
+                <div class="flex space-x-2">
+                    <i class="fa-sharp fa-solid fa-location-dot text-sm" style="color: #7bc476;"></i>
+                    <p class="text-sm text-black font-medium">Shop no- G1, Ground floor, building Mohemadi chambers, JJ road, byculla, Mumbai - 400008.</p>
+                </div>
+                <div class="flex space-x-2">
+                    <i class="fa-solid fa-envelope text-sm" style="color: #83bf44;"></i>
+                    <p class="text-sm text-black font-medium">+91 790-004-0696</p>
+                </div>
+                <div class="flex space-x-2">
+                    <i class="fa-solid fa-phone text-sm" style="color: #008b48;"></i>
+                    <p class="text-sm text-black font-medium">sales@insrecycling.com</p>
+                </div>
+                <div class="flex space-x-4 justify-start items-center w-full">
+                    <i class="fa-brands fa-facebook bg-black rounded-full p-2 text-base hover:bg-colorLight hover:shadow-sm" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter bg-black rounded-full p-2 text-base hover:bg-colorLight hover:shadow-sm" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin-in bg-black rounded-full p-2 text-base hover:bg-colorLight hover:shadow-sm" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram bg-black rounded-full p-2 text-base hover:bg-colorLight hover:shadow-sm" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-youtube bg-black rounded-full p-2 text-base hover:bg-colorLight hover:shadow-sm" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap w-full items-center justify-between md:justify-start">
+            <div class="flex flex-col space-y-2 items-start justify-center mr-5">
+                <h1 class="text-base font-medium text-black">Navigation</h1>
+                <div class="flex pl-2 justify-center items-start space-x-2">
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/index.html">Home</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Services.html">Services</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/About.html">Organisation</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Contact.html">Contact Us</a></p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-2 items-start justify-center md:mx-5">
+                <h1 class="text-base font-medium text-black">Additional</h1>
+                <div class="flex pl-2 justify-center items-start space-x-2">
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Company/Science.html">Science</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Company/Vision.html">Our Vision</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Company/Team.html">Our Team</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Company/Community.html">Community</a></p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-2 items-start justify-center md:ml-5">
+                <h1 class="text-base font-medium text-black">Legal</h1>
+                <div class="flex pl-2 justify-center items-start space-x-2">
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Legal/TermsAndConditions.html">Terms & Conditions</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Legal/PrivacyPolicy.html">Privacy Policy</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Legal/License.html">Licenses</a></p>
+                    <p class="text-sm font-normal text-neutral-600 cursor-pointer hover:text-colorDark text-left"><a href="/Legal/Sitemap.html">Sitemap</a></p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+    </footer>
+
+    <div class="w-full justify-center items-center py-2 bg-black">
+        <h2 class="text-center w-full text-white">© 2023 I & S Rubber Recycling LLP</h2>
+    </div>
+
+    <!-- Footer : END -->
+
+    <!-- Scripts -->
+    <script src="/JS/index.js"></script>
     
 </body>
 </html>
